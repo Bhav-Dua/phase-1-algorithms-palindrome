@@ -1,13 +1,17 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let backwards = '';
+  for (let i = word.length - 1; i >= 0; i--) {
+    backwards += word[i];
+  }
+  return backwards === word;
 }
 
 /* 
-  Add your pseudocode here
+  Creates a variable with the string backwards
 */
 
 /*
-  Add written explanation of your solution here
+  Uses a loop to pass through each character of the string from end to beginning, adding it to the backwards variable
 */
 
 // You can run `node index.js` to view these console logs
